@@ -1,0 +1,141 @@
+.about {
+  display: flex;
+  align-items: center;
+  margin-bottom: 200px;
+  justify-content: space-between;
+  @media (max-width: 1919px) {
+    margin-bottom: 150px;
+  }
+  @media (max-width: 1439px) {
+    margin-bottom: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.about__col {
+  max-width: 574px;
+  @media (max-width: 1919px) {
+    max-width: 430px;
+  }
+  @media (max-width: 1439px) {
+    max-width: 100%;
+  }
+}
+
+.about__progress {
+  display: flex;
+  align-items: flex-start;
+
+  @media (max-width: 1439px) {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 13px;
+  }
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+  &--mode {
+    width: 100%;
+    justify-content: space-between;
+    @media (max-width: 1430px) {
+      padding: 0;
+    }
+  }
+}
+
+.about__item {
+  max-width: 140px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 134px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+  @media (max-width: 1919px) {
+    max-width: 105px;
+    margin-right: 100px;
+  }
+  @media (max-width: 767px) {
+    width: calc(100% / 3);
+    margin-right: 0;
+  }
+  &--mode {
+    max-width: 100%;
+    margin-right: 77px;
+    align-items: center;
+    @media (max-width: 1919px) {
+      margin-right: 0;
+      max-width: calc(100% / 3);
+    }
+    @media (max-width: 1439px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.about__number {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 140px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 30px;
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media (max-width: 1919px) {
+    font-size: 21px;
+    height: 105px;
+  }
+  @media (max-width: 1439px) {
+    margin-bottom: 25px;
+  }
+  @media (max-width: 767px) {
+    font-size: 14px;
+    width: 74px;
+    height: 74px;
+  }
+  &--mode {
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 50px;
+    @media (max-width: 1919px) {
+      margin-right: 33px;
+      max-width: 94px;
+      width: 100%;
+    }
+    @media (max-width: 1439px) {
+      max-width: 105px;
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+    @media (max-width: 767px) {
+      max-width: 74px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.about__footer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  p {
+    font-size: 16px;
+    @media (max-width: 767px) {
+      font-size: 12px;
+    }
+  }
+}

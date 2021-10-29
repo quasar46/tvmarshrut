@@ -1,0 +1,106 @@
+.prices__table {
+  &.container {
+    @media (max-width: 1439px) {
+      padding: 0;
+    }
+  }
+}
+
+.prices__table {
+  table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    // display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    @media (max-width: 767px) {
+      display: block;
+      overflow: auto;
+      max-width: 100%;
+    }
+  }
+  thead {
+    background-color: #fffaf5;
+    font-size: 30px;
+    td {
+      text-align: center;
+      padding: 0 8px;
+
+      &:first-child {
+        width: 20%;
+        // text-align: left;
+        padding: 0 50px;
+        padding-left: 8px;
+        @media (max-width: 1439px) {
+          padding: 0 26px;
+          padding-left: 8px;
+        }
+      }
+      &:last-child {
+        width: 20%;
+        // text-align: right;
+        padding: 0 50px;
+        padding-right: 8px;
+        @media (max-width: 1439px) {
+          padding: 0 26px;
+          padding-right: 8px;
+        }
+      }
+    }
+    @media (max-width: 1439px) {
+      font-size: 27px;
+    }
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+  tr {
+    height: 70px;
+    @media (max-width: 1439px) {
+      height: 64px;
+    }
+    @media (max-width: 767px) {
+      height: 32px;
+    }
+  }
+  tbody {
+    font-size: 24px;
+    font-weight: 300;
+    tr {
+      &:nth-child(2n) {
+        background-color: #fffaf5;
+      }
+    }
+    td {
+      text-align: center;
+      white-space: nowrap;
+      padding: 0 8px;
+
+      &:first-child {
+        // text-align: left;
+        padding: 0 40px;
+        padding-left: 8px;
+        @media (max-width: 1439px) {
+          padding: 0 18px;
+          padding-left: 8px;
+        }
+      }
+      &:last-child {
+        // text-align: right;
+        padding: 0 40px;
+        padding-right: 8px;
+        @media (max-width: 1439px) {
+          padding: 0 18px;
+          padding-right: 8px;
+        }
+      }
+    }
+    @media (max-width: 1439px) {
+      font-size: 22px;
+    }
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+}

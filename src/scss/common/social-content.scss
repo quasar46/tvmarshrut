@@ -1,0 +1,122 @@
+.social-content {
+  display: flex;
+  @media (max-width: 1439px) {
+    flex-direction: column;
+  }
+}
+
+.social-content__caption {
+  max-width: 600px;
+  width: 100%;
+  flex: 1 0 auto;
+  padding: 60px 100px;
+  border: 0.5px solid #dddddd;
+  border-right: none;
+  p {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+  @media (max-width: 1919px) {
+    padding: 45px 75px;
+    max-width: 450px;
+  }
+  @media (max-width: 1439px) {
+    // display: none;
+    padding: 19px;
+    padding-bottom: 0;
+    max-width: 100%;
+    margin-bottom: 40px;
+    border: none;
+  }
+  @media (max-width: 767px) {
+    padding: 8px;
+    padding-bottom: 0;
+  }
+}
+
+.social-content__blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-content__item {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border: 0.5px solid #dddddd;
+  padding: 30px 50px;
+  img {
+    margin-bottom: 20px;
+    width: 80px;
+    @media (max-width: 1919px) {
+      margin-bottom: 15px;
+      width: 60px;
+    }
+    @media (max-width: 1439px) {
+      width: 53px;
+    }
+    @media (max-width: 767px) {
+      width: 24px;
+      margin-bottom: 10px;
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 187%;
+    color: rgba(34, 34, 34, 0.6);
+    @media (max-width: 1919px) {
+      font-size: 11px;
+    }
+    @media (max-width: 1439px) {
+      font-size: 10px;
+    }
+    @media (max-width: 767px) {
+      font-size: 9px;
+    }
+  }
+  &:nth-child(1),
+  &:nth-child(2) {
+    border-right: none;
+    border-bottom: none;
+  }
+  &:nth-child(3) {
+    border-bottom: 0;
+    @media (max-width: 1349px) {
+      border-right: none; // about
+    }
+    @media (max-width: 767px) {
+      border-right: none;
+    }
+  }
+  &:nth-child(4),
+  &:nth-child(5) {
+    border-right: none;
+  }
+  &:nth-child(4) {
+    @media (max-width: 1349px) {
+      border-bottom: none; // about
+    }
+    @media (max-width: 767px) {
+      border-bottom: none;
+    }
+  }
+  @media (max-width: 1919px) {
+    padding: 20px 40px;
+  }
+  @media (max-width: 1439px) {
+    padding: 30px;
+    width: calc(100% / 2);
+  }
+  @media (max-width: 767px) {
+    padding: 8px;
+    padding-bottom: 20px;
+  }
+}

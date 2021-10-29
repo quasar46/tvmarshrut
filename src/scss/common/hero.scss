@@ -1,0 +1,49 @@
+.hero {
+  position: relative;
+  padding-bottom: 350px;
+  z-index: 10;
+  @media (max-width: 1919px) {
+    padding-bottom: 270px;
+  }
+  @media (max-width: 1439px) {
+    padding-bottom: 240px;
+  }
+  @media (max-width: 767px) {
+    padding-bottom: 85px;
+  }
+}
+
+.hero__title {
+  font-size: 70px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  line-height: 114%;
+  @media (max-width: 1919px) {
+    font-size: 52px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 767px) {
+    font-size: 32px;
+    letter-spacing: -2px;
+    line-height: 125%;
+  }
+}
+
+.hero__subtitle {
+  font-size: 36px;
+  font-weight: 300;
+  max-width: 906px;
+  line-height: 111%;
+  span {
+    color: $colorOrange;
+  }
+  @media (max-width: 1919px) {
+    font-size: 27px;
+    max-width: 680px;
+  }
+  @media (max-width: 767px) {
+    font-size: 16px;
+    line-height: 150%;
+  }
+}

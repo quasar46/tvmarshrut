@@ -1,0 +1,27 @@
+.about-feedback__content {
+  //   max-width: 764px;
+  //   width: 100%;
+  //   flex: 1 0 auto;
+  //   @media (max-width: 1919px) {
+  //     max-width: 643px;
+  //   }
+}
+
+.about-feedback__caption {
+  max-width: 472px;
+  width: 100%;
+  flex: 1 0 auto;
+  margin-right: 240px;
+  @media (max-width: 1919px) {
+    max-width: 388px;
+    margin-right: 135px;
+  }
+  @media (max-width: 1439px) {
+    display: none;
+  }
+}
+
+.about-feedback__wrapper {
+  display: flex;
+  justify-content: space-between;
+}

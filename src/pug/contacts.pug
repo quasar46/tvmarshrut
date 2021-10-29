@@ -1,0 +1,64 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+            section.contacts
+                .container
+                    h2.title-container Контакты
+                .contacts__wrapper 
+                    .contacts__picture
+                        img(src="img/photos/contacts.png" alt="")
+                    .contacts__content 
+                        .contacts__row
+                            p.contacts__title.contacts__title--mode Директор:
+                            ul.contacts__list.contacts__list--mail
+                                li.contacts__name Поляков Евгений Викторович:
+                                li.contacts__description 
+                                    a(href="mailto:info@mtvkursk.com") info@mtvkursk.com
+                        .contacts__row
+                            p.contacts__title Наш адрес: 
+                            ul.contacts__list
+                                li.contacts__description 305001, г. Курск, ул. Карла Либкнехта, 9а, <br> 4 этаж.
+                        .contacts__row
+                            p.contacts__title.contacts__title--mode Менеджеры:
+                            ul.contacts__list.contacts__list--mail
+                                li.contacts__name Ольга Семыкина:
+                                li.contacts__description 
+                                    a(href="mailto:olga@mtvkursk.com") olga@mtvkursk.com
+                            ul.contacts__list.contacts__list--mail
+                                li.contacts__name Светлана Гладких:
+                                li.contacts__description 
+                                    a(href="mailto:svetlana@mtvkursk.com") svetlana@mtvkursk.com
+                            ul.contacts__list.contacts__list--mail
+                                li.contacts__name Евгения Тиганова:
+                                li.contacts__description 
+                                    a(href="mailto:et@mtvkursk.com") et@mtvkursk.com
+                        .contacts__row
+                            p.contacts__title Телефоны:
+                            ul.contacts__list
+                                li.contacts__name 
+                                    a(href="tel:+74712546000") +7 (4712) 54-60-00
+                                li.contacts__description 
+                                    a(href="tel:+74712546000") +7 (4712) 54-60-00
+                .contacts__map#map 
+
+                
+            section.feedback.container 
+                h2.visually-hidden Обратная связь
+                p.feedback__title Всего <span>один шаг</span> <br> до успешной рекламы
+                .feedback__row.button-main
+                    a(href="brif.html").button Заполнить Бриф
+                    a.button.show-modal Написать нам 
+
+
+
+
+
+
+        include modules/footer.pug
+        include modules/modal.pug
+        include modules/script.pug
+        script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+        script(src="js/ymaps.js")

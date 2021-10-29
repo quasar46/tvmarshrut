@@ -1,0 +1,76 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+            section.brif 
+                .container 
+                    h2.brif__title.title-container Бриф на креатив
+                    .brif__wrapper 
+                        .brif__description 
+                            p Тут краткое напутствие к заполнению брифа. Что-то про его важность.Приятно, граждане, наблюдать, как тщательные исследования конкурентов набирают популярность среди определённых слоёв населения, а значит, должны быть представлены в исключительно положительном свете. Приятно, граждане, наблюдать, как диаграммы связей являются.
+                        .brif__form
+                            form(action="get")
+                                p
+                                    label(for="input1") Клиент
+                                    input(type="text" id="input1")
+                                p
+                                    label(for="input2") Бренд
+                                    input(type="text" id="input2")
+                                p
+                                    label(for="input3") Тип ролика
+                                    input(type="text" id="input3")
+                                p
+                                    label(for="input4") Сообщение о продукте
+                                    input(type="text" id="input4")
+                                p
+                                    label(for="input5") Описание продукта/компании
+                                    input(type="text" id="input5")
+                                p
+                                    label(for="input6") Ключевое сообщение
+                                    input(type="text" id="input6")
+                                p
+                                    label(for="input7") Уникальное торговое предложение
+                                    input(type="text" id="input7")
+                                p
+                                    label(for="input8") Тон/стиль ролика
+                                    input(type="text" id="input8")
+                                p
+                                    label(for="input9") Основные конкуренты
+                                    input(type="text" id="input9")
+                                p
+                                    label(for="input10") Общие пожелания
+                                    input(type="text" id="input10")
+                                p
+                                    label(for="input11") Маркетинговые проблемы
+                                    input(type="text" id="input11")
+                                p
+                                    label(for="input12") Оставить без изменений
+                                    input(type="text" id="input12")
+                                p
+                                    label(for="input13") Целевая аудитория
+                                    input(type="text" id="input13")
+                                p
+                                    label(for="input14") Хронометраж
+                                    input(type="text" id="input14")
+                                p 
+                                    label Ситуация потребления
+                                    textarea
+                                p.brif__file
+                                    input(type="file" id="file" value="Выбрать файлы").brif__input
+                                    label(for="file")
+                                        span.brif__screpka 
+                                            img(src="img/attach.svg" alt="")
+                                        span.brif__button-text Выбрать файлы
+                                    span Прикрепите логотип и другие рекламные матрериалы (тут перечисление всей фигни которую можно прикрепить)
+
+                            .brif__button.button-main 
+                                button(type="submit").button.show-modal Оставить заявку
+                                p Нажимая кнопку «Отправить», вы соглашаетесь с политикой конфиденциальности и даёте согласие на обработку персональных данных
+
+
+
+        include modules/footer.pug
+        include modules/modal.pug
+        include modules/script.pug

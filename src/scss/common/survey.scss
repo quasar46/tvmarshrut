@@ -1,0 +1,109 @@
+.survey__title {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 187%;
+  max-width: 770px;
+  margin-bottom: 60px;
+  @media (max-width: 1919px) {
+    margin-bottom: 30px;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+}
+
+.survey__wrapper {
+  display: flex;
+}
+
+.survey__picture {
+  max-width: 873px;
+  width: 100%;
+  flex: 1 0 auto;
+  @media (max-width: 1919px) {
+    max-width: 655px;
+  }
+  @media (max-width: 1439px) {
+    display: none;
+  }
+}
+
+.survey__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.survey__item {
+  border: 1px solid #dddddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+  flex: 1 0 auto;
+  width: 100%;
+  padding: 40px;
+  @media (max-width: 1919px) {
+    padding: 30px;
+  }
+  @media (max-width: 767px) {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.survey__circle {
+  position: relative;
+  i {
+    display: block;
+    width: 141px;
+    height: 141px;
+    background-image: url("../img/circle01.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @media (max-width: 1919px) {
+      width: 106px;
+      height: 106px;
+    }
+    @media (max-width: 767px) {
+      font-size: 85px;
+      width: 85px;
+      height: 85px;
+    }
+  }
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    @media (max-width: 1919px) {
+      font-size: 22px;
+    }
+    @media (max-width: 767px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.survey__footer {
+  text-align: center;
+  font-size: 16px;
+  color: rgba(25, 25, 25, 0.6);
+  text-transform: uppercase;
+  margin-top: 20px;
+  line-height: 187%;
+  @media (max-width: 1919px) {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  @media (max-width: 767px) {
+    font-size: 9px;
+    margin-top: 7px;
+  }
+}

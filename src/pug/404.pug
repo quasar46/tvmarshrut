@@ -1,0 +1,23 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        header.header.container 
+            .header__wrapper
+                //- лого
+                a(href="index.html").logo.header__logo
+                    p Маршрут
+                    span.logo__circle 
+                    p Тв
+        main
+            section.notfound 
+                h2.visually-hidden Страница не найдена
+                h2.notfound__title 
+                    picture 
+                        source(media="(max-width: 767px)" srcset="img/notfound/img320.png")
+                        source(media="(max-width: 1439px)" srcset="img/notfound/img768.png")
+                        img(src="img/notfound/img1920.png" alt="404")
+                p.notfound__subtitle Страница не найдена
+                .notfound__button.button-main
+                    a(href="index.html").button Вернуться на главную
+        footer 

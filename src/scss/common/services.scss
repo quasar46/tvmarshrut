@@ -1,0 +1,127 @@
+.services {
+  display: flex;
+  @media (max-width: 1439px) {
+    flex-direction: column;
+  }
+}
+
+.services__caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 auto;
+  max-width: 712px;
+  width: 100%;
+  background-image: url("../img/services/picture.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 600px;
+  @media (max-width: 1919px) {
+    min-height: 450px;
+    max-width: 534px;
+  }
+  @media (max-width: 1439px) {
+    display: none;
+  }
+}
+
+.services__title {
+  font-size: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  @media (max-width: 1919px) {
+    font-size: 27px;
+  }
+  &--mode {
+    display: none;
+    @media (max-width: 1439px) {
+      display: block;
+      color: $colorAddText;
+      margin-bottom: 40px;
+    }
+    @media (max-width: 767px) {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.services__links {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 3);
+  border: 0.5px solid #dddddd;
+  padding: 20px;
+  svg {
+    margin-bottom: 35px;
+    @media (max-width: 1919px) {
+      transform: scale(0.7);
+      margin-bottom: 0;
+    }
+  }
+  &:hover {
+    background-color: #ff7900;
+    color: #ffffff;
+    svg {
+      path,
+      circle,
+      line,
+      rect {
+        stroke: #ffffff;
+      }
+    }
+  }
+  @media (max-width: 1919px) {
+    width: calc(100% / 3);
+  }
+  @media (max-width: 1439px) {
+    height: 191px;
+  }
+  @media (max-width: 767px) {
+    width: calc(100% / 2);
+    height: 149px;
+  }
+  &:nth-child(1),
+  &:nth-child(2) {
+    border-right: none;
+    border-bottom: none;
+  }
+  &:nth-child(3) {
+    border-bottom: 0;
+    @media (max-width: 767px) {
+      border-right: none;
+    }
+  }
+  &:nth-child(4) {
+    border-right: none;
+    @media (max-width: 767px) {
+      border-bottom: none;
+    }
+  }
+  &:nth-child(5) {
+    border-right: none;
+  }
+}
+
+.services__name {
+  font-size: 16px;
+  text-align: center;
+  line-height: 187%;
+  text-transform: uppercase;
+  @media (max-width: 1919px) {
+    font-size: 14px;
+  }
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
+}

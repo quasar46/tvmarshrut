@@ -1,0 +1,15 @@
+.modal.overlay
+    .modal__wrapper
+        .modal__cross
+            img(src="img/cross.svg" alt="")
+        h2.modal__title Напишите нам
+        form.modal__form(action="get")
+            p.modal__input
+                input(type="text" placeholder="Имя" required)
+            p.modal__input
+                input(type="email" placeholder="Email" required)
+            p.modal__input
+                textarea(required)
+            p.modal__concent Нажимая кнопку «Отправить», вы соглашаетесь с политикой конфиденциальности и даёте согласие на обработку персональных данных
+            .modal__button.button-main
+                button(type="submit").button Отправить

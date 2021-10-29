@@ -1,0 +1,89 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+
+        include modules/header
+        main
+            section.about-description
+                .container
+                    h2.about-description__title.title-container О компании
+                .about-description__wrapper
+                    .about-description__content
+                        .about-description__picture 
+                            img(src="img/photos/pic1.png" alt="")
+                        .about-description__block.text-block 
+                            p.text-block__title Рекламное агентство «Маршрут ТВ». Мы работаем с 2010 года, и уже успели завоевать внимание и уважение клиентов, заслужив доверие компаний города.
+                            .text-block__content 
+                                p Маршрут тв — это профессиональный коллектив и современное оборудование, которое обеспечивает быстрое и качественное выполнение ваших заказов по низким ценам и с высоким качеством.Оперативность и качество производимой продукции является визитной карточкой нашей фирмы. Компания располагает собственной производственной базой, отвечающей самым современным технологическим требованиям. Благодаря высокому профессионализму сотрудников, на сегодняшний день «Маршрут ТВ» является ведущим агентством по размещению мультимидийной рекламы в Курске. Мы уделяем особое внимание качеству предоставляемых услуг. Прозрачная система отчётности гарантирует оперативный контроль трансляции вашей рекламы.
+            section.about.container-small
+                h2.visually-hidden В цифрах
+                .about__progress.about__progress--mode
+                    .about__item.about__item--mode
+                        .about__number.about__number--mode 
+                            img(src="img/circle01.svg" alt="")
+                            span(data-from="0" data-to="320000" data-speed="500" data-refresh-interval="1").counter 320000
+                        .about__footer 
+                            p Пассажиров
+                    .about__item.about__item--mode
+                        .about__number.about__number--mode
+                            img(src="img/circle02.svg" alt="")
+                            span(data-from="0" data-to="9000" data-speed="500" data-refresh-interval="1").counter 9000
+                        .about__footer 
+                            p Показов в день
+                    .about__item.about__item--mode
+                        .about__number.about__number--mode 
+                            img(src="img/circle03.svg" alt="")
+                            span(data-from="0" data-to="150" data-speed="500" data-refresh-interval="1").counter 150
+                        .about__footer 
+                            p Маршрутных такси
+
+            section.social-content 
+                .social-content__caption.text-block
+                    h2.social-content__title.title-container Социальная ответственность
+                    .text-block__content 
+                        p Рекламное агентство «Маршрут ТВ», помимо своей основной деятельности, активно участвует в социальной жизни Курска и области. 
+                        p Еженедельно в нашем эфире транслируется актуальная социальная реклама, объём которой достигает 5% от всей транслируемой информации.
+                        p Мы создали ряд образовательных проектов, в рамках которых рассказываем курянам о малоизвестных фактах из истории Курска, о некогда известных, а теперь почти забытых жителях нашего города
+                .social-content__blocks 
+                    .social-content__item 
+                        img(src="img/logotips/item1.png" alt="")
+                        p Cовместно с Прокуратурой по Курской области участвует в акциях по противодействию коррупции, информируя о телефонах доверия.
+                    .social-content__item 
+                        img(src="img/logotips/item2.png" alt="")
+                        p Cовместно с Управлением Федеральной Службы судебных приставов России по Курской области помогает разыскивать злостных неплательщиков.
+                    .social-content__item 
+                        img(src="img/logotips/item3.png" alt="")
+                        p Cовместно с Управлением «К» МВД по Курской области выпускает в эфир ролики про защиту интеллектуальной собственности.
+                    .social-content__item 
+                        img(src="img/logotips/item4.png" alt="")
+                        p Cовместно с ГО и ЧС по Курской области постоянно выпускает в эфир ролики о пожароопасности в зимний период, о безопасном поведении на воде.
+                    .social-content__item 
+                        img(src="img/logotips/item5.png" alt="")
+                        p Cовместно с ГИБДД по Курской области размещает в эфире ролики о ПДД и ответственности за поведение на дороге.
+                    .social-content__item 
+                        img(src="img/logotips/item6.png" alt="")
+                        p Cовместно с Управлением Федеральной Налоговой Службы по Курской области информирует граждан о повышений налоговой дисциплины.
+
+            section.about-feedback
+                h2.visually-hidden Обратная связь
+                .container-small
+                    .about-feedback__wrapper
+                        .about-feedback__caption 
+                            img(src="img/message.svg" alt="")
+                        .about-feedback__content.aside-block 
+                            h2.aside-block__title Есть вопросы?
+                            p.aside-block__subtitle.title-container Напишите нам!
+                            .aside-block__content.aside-block__content--mode
+                                p Прежде всего, социально-экономическое развитие представляет собой интересный эксперимент проверки благоприятных перспектив. Вот вам яркий пример современных тенденций — укрепление и развитие внутренней структуры создаёт предпосылки для первоочередных требований.
+                            .button-main 
+                                button.button.show-modal Написать
+
+
+
+
+
+        include modules/footer.pug
+        include modules/modal.pug
+        include modules/script.pug
+        script(src="js/jquery.countTo.js")

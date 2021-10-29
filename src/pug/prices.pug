@@ -1,0 +1,72 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+            section.prices
+                .container 
+                    h2.prices__tite.title-container Цены
+                .prices__table.container
+                    table.scroll-panel
+                        thead 
+                            tr 
+                                td Услуга
+                                td Количество
+                                td Период ротации
+                                td Цена
+                        tbody 
+                            tr 
+                                td Наименование 1
+                                td 5
+                                td 1 недедя
+                                td 1620
+                            tr 
+                                td Наименование 1
+                                td 5
+                                td 1 недедя
+                                td 1620
+                            tr 
+                                td Наименование 1
+                                td 5
+                                td 1 недедя
+                                td 1620
+                            tr 
+                                td Наименование 1
+                                td 5
+                                td 1 недедя
+                                td 1620
+                            tr 
+                                td Наименование 1
+                                td 5
+                                td 1 недедя
+                                td 1620
+                            tr 
+                                td Наименование 1
+                                td 5
+                                td 1 недедя
+                                td 1620
+                            tr 
+                                td Наименование 1
+                                td 5
+                                td 1 недедя
+                                td 1620
+
+            section.feedback.container 
+                h2.visually-hidden Обратная связь
+                p.feedback__title Готовы<i class="br"></i> к <span>сорудничеству</span> ? <br> напишите нам!
+                .feedback__row.button-main
+                    a(href="brif.html").button Заполнить Бриф
+                    a.button.show-modal Написать нам 
+
+
+
+
+
+
+        include modules/footer.pug
+        include modules/modal.pug
+        include modules/script.pug
+        script(src="js/jquery.mousewheel.js")
+        script(src="js/jquery.jscrollpane.min.js")
+        script $('.scroll-panel').jScrollPane();

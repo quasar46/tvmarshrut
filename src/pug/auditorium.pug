@@ -1,0 +1,89 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+            section.auditorium 
+                .container
+                    h2.auditorium__title.title-container Аудитория
+                .auditorium__wrapper
+                    .auditorium__content
+                        .auditorium__picture 
+                            img(src="img/photos/auditorium.png" alt="")
+                        .auditorium__block.text-block 
+                            p.text-block__title Услугами маршрутного такси в городе пользуется 70% населения, или больше 320 000 курян
+                            .text-block__content 
+                                p Пассажиры маршрутных такси — это работающие, служащие, учащиеся, то есть люди, имеющие активную жизненную позицию, составляющие основу общества.
+                                p Зрители «Маршрут ТВ»– молодые, активные, образованные люди с достаточным уровнем дохода!
+
+            section.survey
+                .container 
+                    h2.survey__title Всего, с 20 по 30 марта 2018 г. было опрошено 2250 курян в возрасте от 18 до 75 лет, из них 1050 мужчин и 1200 женщин
+                    .survey__wrapper 
+                        .survey__content 
+                            .survey__item 
+                                .survey__circle 
+                                    i 
+                                    span 146%
+                                p.survey__footer Ездили в маршрутном такси с рекламными мониторами
+                            .survey__item 
+                                .survey__circle 
+                                    i 
+                                    span 146%
+                                p.survey__footer Ездили в маршрутном такси с рекламными чехлами на сиденьях
+                            .survey__item 
+                                .survey__circle 
+                                    i 
+                                    span 146%
+                                p.survey__footer Привлекла информация, транслируемая на экранах
+                            .survey__item 
+                                .survey__circle 
+                                    i 
+                                    span 146%
+                                p.survey__footer Привлекла информация на рекламных чехлах
+                        .survey__picture 
+                            img(src="img/photos/5.png" alt="")
+
+            section.graphics
+                .container 
+                    .graphics__wrapper
+                        .graphics__content
+                            h2.graphics__title На какую рекламную информацию в маршрутных такси вы обращаете внимание?
+                            ul.graphics__list 
+                                li.graphics__item
+                                    span(style="background-color:#FFC3A1")
+                                    p Животные, зоотовары
+                                li.graphics__item
+                                    span(style="background-color:#A3FFA1")
+                                    p Наука, технологии, исследования, развитие детей
+                                li.graphics__item
+                                    span(style="background-color:#FFA1A1")
+                                    p Спорт, спортивные товары, спортивное питание
+                                li.graphics__item
+                                    span(style="background-color:#A1F4FF")
+                                    p Гастроли, театры туризм, развлечения, события в Курске
+                                li.graphics__item
+                                    span(style="background-color:#CAA1FF")
+                                    p Медицина, медицинские услуги, ЗОЖ
+                                li.graphics__item
+                                    span(style="background-color:#FFA1D9")
+                                    p Юридические услуги, автострахование
+                        .graphics__picture 
+                            img(src="img/big-circle.svg" alt="")
+
+            section.feedback.container 
+                h2.visually-hidden Обратная связь
+                p.feedback__title Готовы <span>к сотрудничеству</span> ? <br> напишите нам
+                .feedback__row.button-main
+                    a(href="brif.html").button Заполнить Бриф
+                    a.button.show-modal Написать нам 
+
+
+
+
+
+
+        include modules/footer.pug
+        include modules/modal.pug
+        include modules/script.pug

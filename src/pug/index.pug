@@ -1,0 +1,176 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        header.header.header--vh.container 
+            .overlay
+            video(loop="" muted="" autoplay="" poster="img/video-header.png").fullscreen-bg__video
+                source(src="img/media/video.mp4" type="video/mp4")
+                //- source(src="img/media/video.webm" type="video/webm")
+            .header__wrapper.header__wrapper--mode
+                //- лого
+                a(href="index.html").logo.header__logo
+                    p Маршрут
+                    span.logo__circle 
+                    p Тв
+                include modules/menu.pug
+                //- социал
+                .header__social.social 
+                    .social__item.social__vk
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="18" r="17.5" stroke="#333333"/><path d="M27.6607 13.1368C27.8022 12.6973 27.6607 12.375 26.9917 12.375H24.7756C24.2117 12.375 23.954 12.6538 23.8125 12.9601C23.8125 12.9601 22.6857 15.5301 21.089 17.1966C20.5737 17.6815 20.3382 17.8346 20.0573 17.8346C19.9168 17.8346 19.7127 17.6815 19.7127 17.2419V13.1368C19.7127 12.6094 19.55 12.375 19.0801 12.375H15.5977C15.246 12.375 15.0338 12.6189 15.0338 12.8514C15.0338 13.3505 15.8321 13.4658 15.914 14.8723V17.9234C15.914 18.5917 15.7856 18.7136 15.5027 18.7136C14.7518 18.7136 12.9248 16.1341 11.8404 13.1813C11.6292 12.6075 11.416 12.3759 10.8501 12.3759H8.63494C8.00132 12.3759 7.875 12.6548 7.875 12.961C7.875 13.5112 8.62584 16.2334 11.3725 19.8337C13.2037 22.2922 15.7816 23.625 18.1301 23.625C19.5378 23.625 19.7117 23.3291 19.7117 22.8187V20.9604C19.7117 20.3687 19.8461 20.2496 20.2917 20.2496C20.6191 20.2496 21.183 20.4046 22.4978 21.589C23.9995 22.9936 24.2481 23.6241 25.0919 23.6241H27.307C27.9396 23.6241 28.2559 23.3282 28.074 22.7441C27.8749 22.1627 27.1574 21.3168 26.2055 20.3158C25.6881 19.7449 24.915 19.1305 24.6796 18.8233C24.3511 18.4272 24.4461 18.2524 24.6796 17.9008C24.6806 17.9017 27.3798 14.3458 27.6607 13.1368Z" stroke="#333333"/></svg>
+
+                    .social__item.social__inst
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="18" r="17.5" stroke="#333333"/><path d="M22.2341 9.53125H13.7659C11.4274 9.53125 9.53174 11.4269 9.53174 13.7654V22.2336C9.53174 24.5721 11.4274 26.4678 13.7659 26.4678H22.2341C24.5726 26.4678 26.4683 24.5721 26.4683 22.2336V13.7654C26.4683 11.4269 24.5726 9.53125 22.2341 9.53125Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M17.9988 21.1764C19.7527 21.1764 21.1744 19.7546 21.1744 18.0008C21.1744 16.247 19.7527 14.8252 17.9988 14.8252C16.245 14.8252 14.8232 16.247 14.8232 18.0008C14.8232 19.7546 16.245 21.1764 17.9988 21.1764Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M22.7642 13.2363V13.2373" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    .social__item.social__youtube 
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="18" cy="18" r="17.5" stroke="#333333"/><path d="M23.272 10.4404H12.4719C10.086 10.4404 8.15186 12.3746 8.15186 14.7605V21.2405C8.15186 23.6264 10.086 25.5606 12.4719 25.5606H23.272C25.6579 25.5606 27.592 23.6264 27.592 21.2405V14.7605C27.592 12.3746 25.6579 10.4404 23.272 10.4404Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/><path d="M15.71 14.7617L21.11 18.0017L15.71 21.2418V14.7617Z" stroke="#333333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                //- заявка
+                .header__button.button-main#order-btn
+                    button.button.show-modal  Оставить заявку
+
+                .header__burger.burger 
+                    span
+
+            .header__hero.hero 
+                .hero__caption
+                    h2.hero__title Качество <br> Результативность <br> Профессионализм
+                    p.hero__subtitle Реклама в транспорте — это <span>эффективная</span> рекламная площадка. Ежедневно «Маршрут ТВ» информирует и развлекает <span>более 320 000 пассажиров.</span>
+
+        main
+            section.photos 
+                h2.visually-hidden Фото 
+                .photos__pic.photos__pic--1
+                    .photos__pic-overlay
+                        h3 Название проекта
+                        p Лишь базовые сценарии поведения пользователей рассмотрены исключительно в разрезе маркетинговых и финансовых
+                    img(src="img/photos/1.png" alt="")
+                .photos__pic.photos__pic--2
+                    .photos__pic-overlay
+                        h3 Название проекта
+                        p Лишь базовые сценарии поведения пользователей рассмотрены исключительно в разрезе маркетинговых и финансовых
+                    img(src="img/photos/2.png" alt="")
+                .photos__pic.photos__pic--3
+                    .photos__pic-overlay
+                        h3 Название проекта
+                        p Лишь базовые сценарии поведения пользователей рассмотрены исключительно в разрезе маркетинговых и финансовых
+                    img(src="img/photos/3.png" alt="")
+                .photos__pic.photos__pic--4
+                    .photos__pic-overlay
+                        h3 Название проекта
+                        p Лишь базовые сценарии поведения пользователей рассмотрены исключительно в разрезе маркетинговых и финансовых
+                    img(src="img/photos/4.png" alt="")
+
+            section.services 
+                .services__caption 
+                    h2.services__title Наши услуги
+                h2.services__title.services__title--mode.container Наши услуги
+                .services__links
+                    a(href="#").services__item
+                        <svg width="110" height="75" viewBox="0 0 110 75" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="109" height="74" rx="3.5" stroke="#FF7900"/><line x1="1" y1="65.5" x2="110" y2="65.5" stroke="#FF7900"/><circle cx="14" cy="70" r="1.5" stroke="#FF7900"/><circle cx="21" cy="70" r="1.5" stroke="#FF7900"/><circle cx="28" cy="70" r="1.5" stroke="#FF7900"/></svg>
+                        p.services__name Реклама на мониторах
+                    a(href="#").services__item
+                        <svg width="110" height="75" viewBox="0 0 110 75" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0.5" y="0.5" width="109" height="74" rx="3.5" stroke="#FF7900"/><line x1="1" y1="65.5" x2="110" y2="65.5" stroke="#FF7900"/><circle cx="14" cy="70" r="1.5" stroke="#FF7900"/><circle cx="21" cy="70" r="1.5" stroke="#FF7900"/><circle cx="28" cy="70" r="1.5" stroke="#FF7900"/></svg>
+                        p.services__name Реклама на подголовниках
+                    a(href="#").services__item
+                        <svg width="76" height="75" viewBox="0 0 76 75" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="38" cy="37.5" r="37" stroke="#FF7900"/><path d="M26.5005 21.4785L54.2505 37.5L26.5005 53.5215L26.5005 21.4785Z" stroke="#FF7900"/></svg>
+                        p.services__name Производство видеороликов
+                    a(href="#").services__item
+                        <svg width="76" height="75" viewBox="0 0 76 75" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.699213 42.7843L31.359 17.7337L43.9879 32.0729L74.6477 7.02231M74.6477 7.02231L69.5729 7.5157M74.6477 7.02231L73.1525 11.8969" stroke="#FF7900" stroke-width="0.862244"/><line x1="3.86304" y1="54" x2="3.86304" y2="75" stroke="#FF7900" stroke-width="1.72449"/><line x1="17.863" y1="44" x2="17.863" y2="75" stroke="#FF7900" stroke-width="1.72449"/><line x1="31.863" y1="34" x2="31.863" y2="75" stroke="#FF7900" stroke-width="1.72449"/><line x1="45.863" y1="41" x2="45.863" y2="75" stroke="#FF7900" stroke-width="1.72449"/><line x1="59.863" y1="34" x2="59.863" y2="75" stroke="#FF7900" stroke-width="1.72449"/><line x1="72.863" y1="20" x2="72.863" y2="75" stroke="#FF7900" stroke-width="1.72449"/></svg>
+                        p.services__name Аудитория
+                    a(href="#").services__item
+                        <svg width="76" height="75" viewBox="0 0 76 75" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M39.5845 45.481H28.8423V56.25H27.3921V45.481H22.021V44.0308H27.3921V39.7339H22.021V38.2837H27.3921V17.1484H39.6113C43.6038 17.1484 46.7012 18.16 48.9033 20.1831C51.1234 22.1883 52.2334 24.9813 52.2334 28.562C52.2334 32.1069 51.1502 34.8462 48.9839 36.7798C46.8354 38.7134 43.7739 39.6981 39.7993 39.7339H28.8423V44.0308H39.5845V45.481ZM28.8423 38.2837H39.6113C43.1383 38.2837 45.8776 37.4333 47.8291 35.7324C49.7985 34.0316 50.7832 31.6593 50.7832 28.6157C50.7832 25.4647 49.7985 23.0119 47.8291 21.2573C45.8776 19.4849 43.1383 18.5986 39.6113 18.5986H28.8423V38.2837Z" fill="#FF7900"/><circle cx="38" cy="37.5" r="37.125" stroke="#FF7900" stroke-width="0.75"/></svg>
+                        p.services__name цены
+                    a(href="#").services__item
+                        <svg width="99" height="77" viewBox="0 0 99 77" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M95.5597 1H3.44025C2.09254 1 1 2.10094 1 3.45902V60.6311C1 61.9892 2.09254 63.0902 3.44025 63.0902H34.4017L49.195 76L63.9882 63.0902H95.5597C96.9075 63.0902 98 61.9892 98 60.6311V3.45902C98 2.10094 96.9075 1 95.5597 1Z" stroke="#FF7900"/><circle cx="31.5" cy="30.5" r="4" stroke="#FF7900"/><circle cx="50.5" cy="30.5" r="4" stroke="#FF7900"/><circle cx="68.5" cy="30.5" r="4" stroke="#FF7900"/></svg>
+                        p.services__name вопросы и ответы
+
+            section.about.container-small
+                .about__col.aside-block
+                    h2.about__title.aside-block__title О компании
+                    p.aside-block__subtitle.title-container Наше рекламное агентство
+                    .about__content.aside-block__content
+                        p Это профессиональный коллектив и современное оборудование, которое обеспечивает быстрое и качественное выполнение ваших заказов по низким ценам и с высоким качеством
+                .about__progress
+                    .about__item
+                        .about__number 
+                            img(src="img/circle01.svg" alt="")
+                            span(data-from="0" data-to="320000" data-speed="500" data-refresh-interval="1").counter 320000
+                        .about__footer 
+                            p Пассажиров
+                    .about__item
+                        .about__number
+                            img(src="img/circle02.svg" alt="")
+                            span(data-from="0" data-to="9000" data-speed="500" data-refresh-interval="1").counter 9000
+                        .about__footer 
+                            p Показов в день
+                    .about__item
+                        .about__number 
+                            img(src="img/circle03.svg" alt="")
+                            span(data-from="0" data-to="150" data-speed="500" data-refresh-interval="1").counter 150
+                        .about__footer 
+                            p Маршрутных такси
+
+            section.description
+                h2.visually-hidden Описание
+                .description__preview
+                    img(src="img/video.png" alt="")
+                .description__content.aside-block 
+                    h2.aside-block__title Маршрутное телевидение
+                    p.aside-block__subtitle.title-container Очевидный выбор для успеха
+                    .aside-block__content 
+                        p Маршрутное телевидение — современный инструмент для эффективного вложения рекламных средств компании любого капитала и формата деятельности. Наше рекламное агентство — это профессиональный коллектив и современное оборудование, которое обеспечивает быстрое и качественное выполнение ваших заказов по низким ценам.
+
+            section.partners.container-small 
+                .partners__subtitle Подзаголовок
+                h2.partners__title Наши партнеры
+                .partners__wrapper
+                    .prev 
+                        img(src="img/arr-prev.svg" alt="")
+                    .next 
+                        img(src="img/arr-next.svg" alt="")
+                    .partners__slider
+                        div
+                            .partners__item 
+                                img.current(src="img/partners/item1.png" alt="")
+                                img.hover(src="img/partners/item1-hover.png" alt="")
+                        div
+                            .partners__item 
+                                img.current(src="img/partners/item2.png" alt="")
+                                img.hover(src="img/partners/item2-hover.png" alt="")
+                        div
+                            .partners__item
+                                img.current(src="img/partners/item1.png" alt="") 
+                                img.hover(src="img/partners/item1-hover.png" alt="") 
+                        div
+                            .partners__item 
+                                img.current(src="img/partners/item2.png" alt="")
+                                img.hover(src="img/partners/item2-hover.png" alt="")
+                        div
+                            .partners__item 
+                                img.current(src="img/partners/item1.png" alt="")
+                                img.hover(src="img/partners/item1-hover.png" alt="")
+                        div
+                            .partners__item 
+                                img.current(src="img/partners/item2.png" alt="")
+                                img.hover(src="img/partners/item2-hover.png" alt="")
+                        div
+                            .partners__item 
+                                img.current(src="img/partners/item1.png" alt="")
+                                img.hover(src="img/partners/item1-hover.png" alt="")
+
+            section.feedback.container 
+                h2.visually-hidden Обратная связь
+                p.feedback__title Всего <span>один шаг</span> <br> до успешной рекламы
+                .feedback__row.button-main
+                    a(href="brif.html").button Заполнить Бриф
+                    a.button.show-modal Написать нам 
+
+
+
+
+
+
+        include modules/footer.pug
+        script  const headerHeight = document.querySelector('.header').clientHeight; const overlay = document.querySelector('.overlay'); overlay.style.height = headerHeight + "px";
+        include modules/modal.pug
+        include modules/script.pug
+        script(src="js/jquery.countTo.js")

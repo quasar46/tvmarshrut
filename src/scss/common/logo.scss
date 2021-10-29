@@ -1,0 +1,22 @@
+.logo{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  @media (max-width: 1919px) {
+    font-size: 18px;
+  }
+}
+
+.logo__circle {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: $colorOrange;
+  margin: 0 4px;
+  margin-bottom: 1px;
+  @media (max-width: 1919px) {
+    width: 13px;
+    height: 13px;
+  }
+}

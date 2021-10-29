@@ -1,0 +1,68 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header
+        main
+            section.advertising
+                .container 
+                    h2.advertising__title.title-container Реклама на мониторах
+                .advertising__wrapper 
+                    .advertising__picture 
+                        img(src="img/photos/6.png" alt="")
+                    .advertising__content 
+                        .advertising__block.text-block 
+                            p.advertising__title Мы изготовим для вас видеоролики различной сложности — от типовых до оригинальных, с использованием различных технологий.
+                            .text-block__content 
+                                p При этом рекламные ролики изготавливаются таким образом, чтобы за время показа без звука человек смог увидеть и запомнить ключевые слова и изображения.
+                                p Видеоролики, транслируемые в эфире маршрутного телевидения, разделяются на две категории сложности.
+                        .advertising__examples.examples
+                            p.examples__tilte Примеры рекламы на мониторах
+                            .examples__content.examples-slider 
+                                a(href="img/photos/ex1.png" data-fancybox="gallery").examples__item
+                                    .examples__preview
+                                        img(src="img/photos/ex1.png" alt="")
+                                a(href="img/photos/ex2.png" data-fancybox="gallery").examples__item
+                                    .examples__preview
+                                        img(src="img/photos/ex2.png" alt="")
+                                a(href="img/photos/ex3.png" data-fancybox="gallery").examples__item
+                                    .examples__preview
+                                        img(src="img/photos/ex3.png" alt="")
+                                a(href="img/photos/ex4.png" data-fancybox="gallery").examples__item
+                                    .examples__preview
+                                        img(src="img/photos/ex4.png" alt="")
+
+            section.advertising
+                h2.visually-hidden Требования
+                .advertising__wrapper 
+                    .advertising__content 
+                        .advertising__block.text-block 
+                            p.advertising__title Требования к видеороликам
+                            .text-block__content 
+                                ul.text-block__list 
+                                    li.text-block__item Изображения: размерность не менее1280х720px, 1920х1080px, разрешение не менее 300 dpi, расширение jpg, bmp, tiff, psd, png.
+                                    li.text-block__item Логотипы: в векторном формате, расширения cdr, eps, ai. Шрифты в кривых.
+                                    li.text-block__item Векторные изображения: расширение cdr, eps, ai. Шрифты в кривых.
+                                    li.text-block__item В том случае, если Ваш бизнес подлежит обязательной сертификации или лицензированию, не забудьте указать это в видеоролике.
+                                    li.text-block__item Не принимаются видеоролики с присутствием логотипов сторонних программ.
+                                    li.text-block__item Формат NTSC предусматривает размер кадра 1280х720px, 1920х1080px
+
+                    .advertising__picture.advertising__picture--mode
+                        img(src="img/photos/8.png" alt="")
+
+
+            section.feedback.container 
+                h2.visually-hidden Обратная связь
+                p.feedback__title Готовы <span>к сотрудничеству</span> ? <br> напишите нам
+                .feedback__row.button-main
+                    a(href="brif.html").button Заполнить Бриф
+                    a.button.show-modal Написать нам 
+
+
+
+
+
+        include modules/footer.pug
+        include modules/modal.pug
+        include modules/script.pug
+        script(src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js")

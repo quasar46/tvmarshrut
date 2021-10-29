@@ -1,0 +1,22 @@
+.prev,
+.next {
+  max-width: 14px;
+  height: 27px;
+  flex: 1 0 auto;
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+.prev {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.next {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
